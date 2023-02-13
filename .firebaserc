@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "tic-tac-toe-angular-austin": {
+      "hosting": {
+        "tic-tac-toe": [
+          "tic-tac-toe-angular-austin"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "tic-tac-toe-angular-austin"
+  }
+}
