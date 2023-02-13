@@ -1,0 +1,19 @@
+<h1>Current Player: {{ player }}</h1>
+
+<!-- Binds an event handler method to our click event -->
+<button (click)="newGame()">Start new game</button>
+
+<!-- Structural directive *ngIf -->
+<h2 *ngIf="winner">Player {{ winner }} win the game</h2>
+
+<!-- Strcutural directive *ngFor - render the template for each iteration of the squares array-->
+<main>
+  <!-- Create template variable val that we can now use -->
+  <!-- Pass down value val to the child square component -->
+  <app-square
+    *ngFor="let val of squares; let i = index"
+    [value]="val"
+    (click)="makeMove(i)"
+  >
+  </app-square>
+</main>
